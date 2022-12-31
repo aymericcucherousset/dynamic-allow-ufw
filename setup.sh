@@ -53,7 +53,7 @@ cp -r ../dynamic-allow-ufw/ /usr/local/bin
 echo "*/10 * * * * root /usr/local/bin/dynamic-allow-ufw/DynamicAllowUFW.sh" > /etc/cron.d/DynamicAllowUFW
 
 # Allow script to be executed
-chmod +x /usr/local/bin/dynamic-allow-ufw/DynamicAllowUFW.sh.sh
+chmod +x /usr/local/bin/dynamic-allow-ufw/DynamicAllowUFW.sh
 
 # Reload cron daemon
 /etc/init.d/cron reload
