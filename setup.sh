@@ -47,13 +47,13 @@ else
 fi
 
 # Copy the script folder to /usr/local/bin
-cp -r ../DynamicAllowUFW/ /usr/local/bin
+cp -r ../dynamic-allow-ufw/ /usr/local/bin
 
 # Create a cron job to run the script every 10 minutes
-echo "*/10 * * * * root /usr/local/bin/DynamicAllowUFW/DynamicAllowUFW.sh" > /etc/cron.d/DynamicAllowUFW
+echo "*/10 * * * * root /usr/local/bin/dynamic-allow-ufw/DynamicAllowUFW.sh" > /etc/cron.d/DynamicAllowUFW
 
 # Allow script to be executed
-chmod +x /usr/local/bin/DynamicAllowUFW/DynamicAllowUFW.sh
+chmod +x /usr/local/bin/dynamic-allow-ufw/DynamicAllowUFW.sh.sh
 
 # Reload cron daemon
 /etc/init.d/cron reload
