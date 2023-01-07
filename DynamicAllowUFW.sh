@@ -3,7 +3,7 @@
 # This script will allow all ports / or custom port for a specific domain name (With dynamic IP) in UFW firewall
 
 # Move to the script directory
-cd /usr/local/bin/DynamicAllowUFW
+cd /usr/local/bin/dynamic-allow-ufw
 
 # Check if the script is run as root
 if [ $EUID -ne 0 ]; then
