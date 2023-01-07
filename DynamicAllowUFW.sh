@@ -20,7 +20,7 @@ fi
 # Check if the IP file exists
 if [ -f IP ]; then
     # Get the IP address from the file
-    IP = $(cat IP)
+    IP=$(cat IP)
 
     # Delete the IP address from the file
     echo "" > IP
