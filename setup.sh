@@ -16,6 +16,9 @@ if [ ! -f config ]; then
     exit 1
 fi
 
+# Install Host package
+apt install -y host
+
 # Ask the user to enter the domain name
 read -p "Enter the domain name: " DOMAIN
 
